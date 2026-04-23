@@ -1,0 +1,111 @@
+/* COLOR PALETTE */
+:root {
+    --choco-dark: #3b2f2f;
+    --choco-light: #d7c4a3;
+    --text: #2b1d1d;
+    --white: #ffffff;
+    --btn-dark: #4a2f2f;
+    --btn-hover: #6b3f3f;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+}
+
+/* PARALLAX SECTIONS */
+.parallax {
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1542831371-d531d36971e6');
+}
+
+.p2 {
+    background-image: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0');
+}
+
+.p3 {
+    background-image: url('https://images.unsplash.com/photo-1497051788611-2c64812349a0');
+}
+
+.p4 {
+    background-image: url('https://images.unsplash.com/photo-1588167108370-7957b47f2a5a');
+}
+
+/* DARK OVERLAY ON HERO */
+.overlay {
+    background: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* INFO BOXES */
+.info {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    max-width: 700px;
+    background: var(--choco-light);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.box h2 {
+    color: var(--choco-dark);
+    margin-top: 0;
+}
+
+/* BUTTONS */
+.choco-btn {
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: var(--btn-dark);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.choco-btn:hover {
+    background: var(--btn-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--choco-dark);
+    color: white;
+}
